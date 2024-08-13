@@ -1,0 +1,90 @@
+# Modo Easy
+def SelectSort_easy(lista):
+    n = len(lista)
+    
+    for i in range(n - 1):
+        menor_id = i
+        for j in range(i + 1, n):
+            if lista[j] < lista[menor_id]:
+                menor_id = j
+        
+        lista[i], lista[menor_id] = lista[menor_id], lista[i]
+        print(f"Lista após o passo {i + 1}: {lista}")
+
+# Modo Divertido
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+class LinkedList:
+    def __init__(self):
+        self.head = None
+
+    def append(self, data):
+        new_node = Node(data)
+        if not self.head:
+            self.head = new_node
+        else:
+            current = self.head
+            while current.next:
+                current = current.next
+            current.next = new_node
+
+    def select_sort(self):
+        if not self.head:
+            return
+        
+        i = 0
+        current_i = self.head
+        
+        while current_i and current_i.next:
+            menor = current_i
+            current_j = current_i.next
+            
+            while current_j:
+                if current_j.data < menor.data:
+                    menor = current_j
+                current_j = current_j.next
+            
+            if menor != current_i:
+                current_i.data, menor.data = menor.data, current_i.data
+            
+            print(f"Lista encadeada após o passo {i + 1}: {self.to_list()}")
+            current_i = current_i.next
+            i += 1
+
+    def to_list(self):
+        lst = []
+        current = self.head
+        while current:
+            lst.append(current.data)
+            current = current.next
+        return lst
+    
+#Testes
+def test_sort_functions():
+    test_cases = {
+        "Já ordenados": [1, 2, 3, 4, 5],
+        "Ordem inversa": [5, 4, 3, 2, 1],
+        "Elementos duplicados": [3, 3, 2, 1, 4, 4, 5],
+        "Aleatórios sem repetição": [7, 2, 4, 1, 6, 3, 5]
+    }
+
+    for case, lst in test_cases.items():
+        print(f"\nTeste: {case}")
+        
+        print("\nModo Easy:")
+        lista_easy = lst.copy()
+        SelectSort_easy(lista_easy)
+        
+        print("\nModo Divertido:")
+        linked_list = LinkedList()
+        for item in lst:
+            linked_list.append(item)
+        linked_list.select_sort()
+
+def main():
+    test_sort_functions()
+
+main()
