@@ -32,11 +32,28 @@ def merge_sort(lista):
 
 def main():
     numeros = [34, 7, 23, 32, 5, 62, 32, 74, 23, 65, 43, 8, 12, 90, 54]
-    
     print("Lista original:", numeros)
-
     merge_sort(numeros)
-
     print("Lista ordenada:", numeros)
+
+    lista_inversa = [9, 8, 7, 6, 5, 4, 3, 2, 1]
+    print("\nLista inversa original:", lista_inversa)
+    merge_sort(lista_inversa)
+    print("Lista inversa ordenada:", lista_inversa)
+
+    lista_ordenada = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    print("\nLista já ordenada original:", lista_ordenada)
+    merge_sort(lista_ordenada)
+    print("Lista já ordenada:", lista_ordenada)
+
+    lista_repetidos = [5, 1, 5, 3, 5, 2, 5, 4, 5]
+    print("\nLista com dados repetidos original:", lista_repetidos)
+    merge_sort(lista_repetidos)
+    print("Lista com dados repetidos ordenada:", lista_repetidos)
+
+    lista_aleatoria = [12, 7, 5, 3, 8, 2, 10, 15, 1]
+    print("\nLista aleatória original:", lista_aleatoria)
+    merge_sort(lista_aleatoria)
+    print("Lista aleatória ordenada:", lista_aleatoria)
 
 main()
