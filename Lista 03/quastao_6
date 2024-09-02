@@ -1,0 +1,13 @@
+a) verdadeira
+
+O Insertion Sort geralmente possui um desempenho melhor do que o Bubble Sort em termos de tempo de execução, especialmente para listas 
+parcialmente ordenadas. Ambos os algoritmos têm uma complexidade de pior caso de O(n²), mas o Insertion Sort é mais eficiente na 
+prática porque faz menos trocas de elementos.
+
+No Bubble Sort, cada par de elementos adjacentes é comparado repetidamente e trocado, se necessário, o que resulta em muitas trocas de
+elementos. Já no Insertion Sort, os elementos são deslocados para a posição correta com base em comparações, resultando em menos 
+trocas. Além disso, o Insertion Sort é adaptativo, o que significa que ele tem um bom desempenho em listas que já estão parcialmente 
+ordenadas, com uma complexidade próxima de O(n) nesses casos.
+
+Portanto, o Insertion Sort tende a ser mais eficiente que o Bubble Sort, principalmente em cenários onde a lista já está quase 
+ordenada.
