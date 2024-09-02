@@ -1,0 +1,8 @@
+E) [1, 3, 7, 9, 8, 10, 12, 13, 15, 19]
+
+Passo 1: O maior elemento, 19, é movido para a última posição.
+Passo 2: O segundo maior elemento, 15, é movido para a penúltima posição.
+Passo 3: O terceiro maior elemento, 13, é movido para sua posição correta, e assim por diante.
+Após o terceiro passo, os três maiores elementos já estão em suas posições finais, e os elementos 
+menores começam a se organizar. Nesse ponto, a lista parcialmente ordenada será [1, 3, 7, 9, 10, 8, 12, 13, 15, 19], 
+como indicado na opção (e).
