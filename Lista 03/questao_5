@@ -1,0 +1,8 @@
+a) O extremo de uma lista já ordenada
+
+No Quick Sort, a eficiência do algoritmo depende muito da escolha do pivô. Se o pivô escolhido for o extremo (por exemplo, o primeiro ou o último elemento) 
+de uma lista já ordenada ou quase ordenada, isso resultará em uma partição muito desequilibrada, o que significa que um lado da partição pode acabar com 
+muitos elementos e o outro lado com poucos ou nenhum. Nesse caso, o algoritmo não reduz eficientemente o tamanho do problema e se degrada para o seu 
+pior caso de complexidade, que é O(n²).
+
+
