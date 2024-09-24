@@ -1,0 +1,8 @@
+pip install scrapy (pra instalar o crawler).
+
+scrapy start project projeto_segunda (criação da estrutura básica do projeto).
+
+scrapy genspider sheldon_spider "https://www.gog.com/en/games/indie" (criação da spider sheldon e definição de onde ela vai atuar).
+
+scrapy crawl sheldon_spider -o produtos.json (comando para o spider pegar os dados do site e usar sua programação interna para armazenar seus dados no arquivo
+produtos.json).
