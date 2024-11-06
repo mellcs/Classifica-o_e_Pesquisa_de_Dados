@@ -92,37 +92,36 @@ class ABB:
             self._post_order(node.right)
             print(node.key, end=' ')
 
-#TESTES
+# TESTES
 if __name__ == "__main__":
     arvore = ABB()
-  
+
     valores = [50, 30, 20, 40, 70, 60, 80]
     for valor in valores:
         arvore.insert(valor)
-    
-    print("Ordem original:")
-    print(valores)
-    print()
-    
-    print("Árvore em diferentes ordens de percurso:")
+
+    print("Árvore após inserções iniciais (Ordem simétrica):")
+    arvore.in_order()  
+
+    print("\nÁrvore em diferentes ordens de percurso:")
 
     print("Pré-ordem:")
-    arvore.pre_order() 
+    arvore.pre_order()  
 
     print("Ordem simétrica:")
     arvore.in_order() 
 
     print("Pós-ordem:")
-    arvore.post_order() 
+    arvore.post_order()  
 
     print("\nBuscas:")
-    print(f"Busca por 40: {'Encontrado' if arvore.search(40) else 'Não encontrado'}")  
+    print(f"Busca por 40: {'Encontrado' if arvore.search(40) else 'Não encontrado'}") 
     print(f"Busca por 25: {'Encontrado' if arvore.search(25) else 'Não encontrado'}")  
 
     print("\nDeleção:")
     arvore.delete(20)
     print("Árvore após deletar 20 (Ordem simétrica):")
-    arvore.in_order() 
+    arvore.in_order()  
 
     arvore.delete(30)
     print("Árvore após deletar 30 (Ordem simétrica):")
@@ -130,4 +129,4 @@ if __name__ == "__main__":
 
     arvore.delete(50)
     print("Árvore após deletar 50 (Ordem simétrica):")
-    arvore.in_order()  
+    arvore.in_order() 
