@@ -1,0 +1,5 @@
+1,The Witcher 3,CD Projekt Red,150,RPG,Ação
+2,Stardew Valley,ConcernedApe,40,Indie,Simulação
+3,Doom Eternal,id Software,200,Ação,Tiro
+4,Celeste,Maddy Makes Games,50,Indie,Plataforma
+5,Cyberpunk 2077,CD Projekt Red,180,RPG,Ação
